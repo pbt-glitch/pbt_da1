@@ -1,0 +1,131 @@
+/* Đặt kiểu chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Thanh điều hướng */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 20px;
+    color: white;
+}
+
+.nav .logo img {
+    width: 181px;
+    height: 40px;
+}
+
+.nav .menu ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav .menu ul li {
+    margin: 0 15px;
+}
+
+.nav .menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav .icon img {
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+/* Banner */
+.baner {
+    text-align: center;
+}
+
+.baner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Sản phẩm mới */
+.new.products {
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.new_01 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.new_01 h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.new_01 button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.new_02 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.sp_new.products {
+    background-color: white;
+    width: 296px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.sp_new.products:hover {
+    transform: translateY(-5px);
+}
+
+.sp_new.products img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.sp_new.products h4 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.sp_new.products span {
+    font-size: 14px;
+    color: #777;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.sp_new.products p {
+    font-size: 16px;
+    color: #e60000;
+    font-weight: bold;
+}

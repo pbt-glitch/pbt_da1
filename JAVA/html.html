@@ -1,0 +1,49 @@
+<!DOCTYPE html>  
+<html lang="vi">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="./css.css">  
+</head>  
+<body>  
+    <h1>DAT HANG</h1> 
+    <div class="container">  
+        <h1>Đặt Hàng</h1>  
+        <form id="orderForm">  
+            <div class="form-group">  
+                <label for="quantity">Số lượng:</label>  
+                <input type="number" id="quantity" required>  
+            </div>  
+            <div class="form-group">  
+                <label for="product">Sản phẩm:</label>  
+                <select id="product" required>  
+                    <option value="">Chọn sản phẩm</option>  
+                    <option value="Sp1">Sản phẩm 1</option>  
+                    <option value="Sp2">Sản phẩm 2</option>  
+                </select>  
+            </div>  
+            <div class="form-group">  
+                <label for="type">Loại:</label>  
+                <select id="type" required>  
+                    <option value="">Chọn loại</option>  
+                    <option value="Nhập khẩu">Nhập khẩu</option>  
+                    <option value="Nội địa">Nội địa</option>  
+                </select>  
+            </div>  
+            <div class="form-group">  
+                <label for="price">Đơn giá:</label>  
+                <input type="number" id="price" required min="0">  
+            </div>  
+            <div class="form-group">  
+                <label>Hình thức giao hàng:</label>  
+                <input type="radio" name="delivery" value="Nội thành" checked> Nội thành  
+                <input type="radio" name="delivery" value="Ngoại thành"> Ngoại thành  
+            </div>  
+            <button type="submit">Đặt mua</button>  
+        </form>  
+        <div id="errorMessages"></div>  
+        <div id="orderDetails"></div>  
+    </div>  
+    <script src="js.js"></script>  
+</body>  
+</html>  
